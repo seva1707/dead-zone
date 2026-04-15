@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dead Zone</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #060608;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      font-family: monospace;
+    }
+
+    #gameCanvas {
+      display: block;
+      cursor: crosshair;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      border: 2px solid #222233;
+      box-shadow: 0 0 40px rgba(255, 30, 50, 0.18), 0 0 80px rgba(0,0,0,0.8);
+    }
+
+    #hint {
+      margin-top: 10px;
+      color: #333344;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <div id="hint">DEAD ZONE &mdash; Pure HTML5 Canvas</div>
+
+  <script src="js/levels.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/entities.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
