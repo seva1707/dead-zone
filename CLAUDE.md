@@ -15,12 +15,20 @@ python -m http.server 8080
 
 ## Git Workflow
 
-After every meaningful change: commit locally and push to GitHub.
+**Commit and push after every meaningful unit of work.** Never leave completed work uncommitted. This ensures the project history is clean and any change can be reverted safely.
+
+What warrants a commit: adding a feature, fixing a bug, changing a game constant, updating a file. When in doubt, commit.
+
 ```bash
 git add <files>
-git commit -m "descriptive message"
+git commit -m "short present-tense summary of what changed and why"
 git push
 ```
+
+Commit message conventions:
+- Use the imperative mood: "Add power-up system" not "Added power-ups"
+- Be specific: "Increase charger speed on levels 3-5" not "tweak enemy"
+- One logical change per commit — don't bundle unrelated edits
 
 The GitHub remote is `https://github.com/seva1707/dead-zone` (origin/master).
 
